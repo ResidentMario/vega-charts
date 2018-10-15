@@ -1,0 +1,15 @@
+{
+  "name": "vega-charts",
+  "version": "1.0.0",
+  "description": "A playground for building Vega charts",
+  "main": "index.js",
+  "scripts": {
+    "vg2png": "./node_modules/vega/bin/vg2png",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vega": "^4.3.0"
+  }
+}
