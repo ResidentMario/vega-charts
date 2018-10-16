@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v4.json",
-  "width": 720,
-  "height": 720,
-  "padding": 5,
+  "width": 960,
+  "height": 960,
   "autosize": "none",
 
   "signals": [
@@ -11,7 +10,7 @@
       "bind": {"input": "checkbox"}
     },
     {
-      "name": "radius", "value": 280,
+      "name": "radius", "value": 420,
       "bind": {"input": "range", "min": 20, "max": 600}
     },
     {
@@ -23,7 +22,7 @@
       "bind": {"input": "range", "min": 0, "max": 360, "step": 1}
     },
     {
-      "name": "layout", "value": "tidy",
+      "name": "layout", "value": "cluster",
       "bind": {"input": "radio", "options": ["tidy", "cluster"]}
     },
     {
@@ -40,7 +39,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "../open-images/data/summaries/bbox-label-hierarchy.json",
+      "url": "../open-images/data/summaries/image-labels-transformed.json",
       "transform": [
         {
           "type": "stratify",
@@ -139,7 +138,7 @@
       "encode": {
         "enter": {
           "text": {"field": "name"},
-          "fontSize": {"value": 9},
+          "fontSize": {"value": 6},
           "baseline": {"value": "middle"}
         },
         "update": {
