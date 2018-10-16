@@ -15,7 +15,7 @@
     {
       "name": "xscale",
       "type": "band",
-      "domain": {"data": "table", "field": "label_id"},
+      "domain": {"data": "table", "field": "label_name"},
       "range": "width",
       "padding": 0.05,
       "round": true
@@ -39,7 +39,7 @@
       "from": {"data": "table"},
       "encode": {
         "enter": {
-          "x": {"scale": "xscale", "field": "label_id"},
+          "x": {"scale": "xscale", "field": "label_name"},
           "width": {"scale": "xscale", "band": 1},
           "y": {"scale": "yscale", "field": "label_count"},
           "y2": {"scale": "yscale", "value": 0}
